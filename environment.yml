@@ -1,0 +1,31 @@
+name: metagrad
+channels:
+  - defaults
+  - conda-forge
+dependencies:
+  - pip=20.2.4
+  - python=3.8
+  - cudatoolkit-dev=11.1
+  - cudnn=8.2
+  - cloudpickle
+  - jupyter=1.0.0
+  - matplotlib=3.5.1
+  - numpy=1.19.2
+  - nbconvert=6.4.4
+  - jupyter_contrib_nbextensions=0.5.1
+  - pip:
+    - jax==0.3.6
+    - "https://storage.googleapis.com/jax-releases/cuda11/jaxlib-0.3.5+cuda11.cudnn82-cp38-none-manylinux2010_x86_64.whl"
+    - rlax==0.1.2
+    - pymdptoolbox==4.0b3
+    - dm-haiku==0.0.6
+    - optax==0.1.2
+    - ray[default]==1.12.0
+    - gym[atari]==0.23.1
+    - chex==0.1.3
+    - bsuite==0.3.5
+    - pytest==7.1.1
+    - mock==4.0.3
+    - pycolab==1.2
+    - procgen==0.10.7
+    - evosax==0.0.4
